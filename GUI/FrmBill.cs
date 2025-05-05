@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class FrmEmployees : Form
+    public partial class FrmBill : Form
     {
-        public FrmEmployees()
+        public FrmBill()
         {
             InitializeComponent();
+        }
+
+        private void guna2ImageButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -76,34 +76,34 @@ namespace GUI
 
         private void btnMua_Click(object sender, EventArgs e)
         {
-            string productName = ProductName;
-            string productPrice = ProductPrice;
-            string selectedSize = SelectSize;
-            string selectedColor = SelectedColor;
-            if (string.IsNullOrEmpty(productName) || string.IsNullOrEmpty(productPrice) || selectedSize == "No size selected" || string.IsNullOrEmpty(selectedColor))
-            {
-                MessageBox.Show("Please select all options before buying.");
-                return;
-            }
-            Product product = new Product
-            {
-                = productName,
-                GiaBan = Convert.ToDouble(productPrice),
-                SoLuong = 1, // Hoặc lấy từ thông tin khác
-                // Bạn có thể thêm các thuộc tính khác vào đối tượng này
-            };
+            //string productName = ProductName;
+            //string productPrice = ProductPrice;
+            //string selectedSize = SelectSize;
+            //string selectedColor = SelectedColor;
+            //if (string.IsNullOrEmpty(productName) || string.IsNullOrEmpty(productPrice) || selectedSize == "No size selected" || string.IsNullOrEmpty(selectedColor))
+            //{
+            //    MessageBox.Show("Please select all options before buying.");
+            //    return;
+            //}
+            ////Product product = new Product
+            ////{
+            ////    = productName,
+            ////    GiaBan = Convert.ToDouble(productPrice),
+            ////    SoLuong = 1, // Hoặc lấy từ thông tin khác
+            ////    // Bạn có thể thêm các thuộc tính khác vào đối tượng này
+            ////};
 
-            // Gọi BLL để thêm sản phẩm vào giỏ hàng
-            bool success = productBLL.AddProductToCart(product);
+            //// Gọi BLL để thêm sản phẩm vào giỏ hàng
+            ////bool success = productBLL.AddProductToCart(product);
 
-            if (success)
-            {
-                MessageBox.Show($"Product '{productName}' has been added to the cart.\nSize: {selectedSize}, Color: {selectedColor}");
-            }
-            else
-            {
-                MessageBox.Show("Failed to add the product to the cart.");
-            }
+            //if (success)
+            //{
+            //    MessageBox.Show($"Product '{productName}' has been added to the cart.\nSize: {selectedSize}, Color: {selectedColor}");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Failed to add the product to the cart.");
+            //}
         }
 
         private void SizeButton_Click(object sender, EventArgs e)

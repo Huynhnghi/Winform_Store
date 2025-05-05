@@ -25,13 +25,6 @@ namespace GUI
             f.Show();
         }
 
-        private void NhaToChuc_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            FrmOrganizer f = new FrmOrganizer();
-            f.ShowDialog();
-            f.Show();
-        }
 
         private void btnLogOut_Click(object sender, EventArgs e)
         {
@@ -99,6 +92,11 @@ namespace GUI
             //FrmReport f = new FrmReport();
             //f.ShowDialog();
             //f.Show();
+        }
+
+        private void NoiToChuc_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

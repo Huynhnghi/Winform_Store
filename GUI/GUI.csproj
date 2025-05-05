@@ -220,23 +220,17 @@
     <Compile Include="FrmCustomer.Designer.cs">
       <DependentUpon>FrmCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmEmployees.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmEmployees.Designer.cs">
-      <DependentUpon>FrmEmployees.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmProduct.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmProduct.Designer.cs">
       <DependentUpon>FrmProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmLocation.cs">
+    <Compile Include="FrmSupplier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmLocation.Designer.cs">
-      <DependentUpon>FrmLocation.cs</DependentUpon>
+    <Compile Include="FrmSupplier.Designer.cs">
+      <DependentUpon>FrmSupplier.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
@@ -250,12 +244,6 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmOrganizer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmOrganizer.Designer.cs">
-      <DependentUpon>FrmOrganizer.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmPofile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -268,17 +256,11 @@
     <Compile Include="FrmProductList.Designer.cs">
       <DependentUpon>FrmProductList.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSponsor.cs">
+    <Compile Include="FrmBill.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmSponsor.Designer.cs">
-      <DependentUpon>FrmSponsor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmTicket.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmTicket.Designer.cs">
-      <DependentUpon>FrmTicket.cs</DependentUpon>
+    <Compile Include="FrmBill.Designer.cs">
+      <DependentUpon>FrmBill.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -291,14 +273,11 @@
     <EmbeddedResource Include="FrmCustomer.resx">
       <DependentUpon>FrmCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmEmployees.resx">
-      <DependentUpon>FrmEmployees.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmProduct.resx">
       <DependentUpon>FrmProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmLocation.resx">
-      <DependentUpon>FrmLocation.cs</DependentUpon>
+    <EmbeddedResource Include="FrmSupplier.resx">
+      <DependentUpon>FrmSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
@@ -306,31 +285,20 @@
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmOrganizer.resx">
-      <DependentUpon>FrmOrganizer.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmPofile.resx">
       <DependentUpon>FrmPofile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmProductList.resx">
       <DependentUpon>FrmProductList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSponsor.resx">
-      <DependentUpon>FrmSponsor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmTicket.resx">
-      <DependentUpon>FrmTicket.cs</DependentUpon>
+    <EmbeddedResource Include="FrmBill.resx">
+      <DependentUpon>FrmBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Product.resx">
       <DependentUpon>Product.cs</DependentUpon>
     </EmbeddedResource>
@@ -339,6 +307,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -352,42 +325,21 @@
     <Analyzer Include="..\packages\AWSSDK.SecurityToken.3.7.100.14\analyzers\dotnet\cs\AWSSDK.SecurityToken.CodeAnalysis.dll" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\supplier %282%29.png" />
-    <None Include="Resources\teamwork %281%29.png" />
-    <None Include="Resources\brand %282%29.png" />
-    <None Include="Resources\description %281%29.png" />
-    <None Include="Resources\cart %281%29.png" />
-    <None Include="Resources\bill %281%29 %281%29.png" />
-    <Content Include="Resources\FaSic.jpg" />
-    <None Include="Resources\FaSic1.jpg" />
-    <None Include="Resources\Logo2.png" />
-    <None Include="Resources\search.jpg" />
-    <None Include="Resources\bill1.png" />
-    <None Include="Resources\staff1.png" />
-    <None Include="Resources\location1.png" />
-    <None Include="Resources\report1.png" />
-    <None Include="Resources\tic2.png" />
-    <None Include="Resources\tic1.png" />
-    <None Include="Resources\event1.png" />
-    <None Include="Resources\organizer.png" />
-    <None Include="Resources\cus.png" />
-    <None Include="Resources\bill.png" />
-    <None Include="Resources\staff.png" />
-    <None Include="Resources\report.png" />
-    <None Include="Resources\exit.png" />
-    <None Include="Resources\user.png" />
-    <None Include="Resources\me.png" />
-    <None Include="Resources\menu.png" />
-    <None Include="Resources\tic.png" />
-    <None Include="Resources\picTicket.jpg" />
-    <None Include="Resources\search.png" />
-    <None Include="Resources\Org.png" />
-    <None Include="Resources\location.png" />
-    <None Include="Resources\evn.png" />
-    <None Include="Resources\Ticket.png" />
-    <None Include="Resources\Logo1.png" />
-    <None Include="Resources\Logo.png" />
-    <None Include="Resources\Logo.ico" />
+    <None Include="Resources\FaSic.jpg" />
+    <Content Include="Resources\images\bill.png" />
+    <Content Include="Resources\images\brand.png" />
+    <Content Include="Resources\images\cart.png" />
+    <Content Include="Resources\images\cus.png" />
+    <Content Include="Resources\images\description.png" />
+    <Content Include="Resources\images\evn.png" />
+    <Content Include="Resources\images\exit.png" />
+    <Content Include="Resources\images\FaSic.jpg" />
+    <Content Include="Resources\images\me.png" />
+    <Content Include="Resources\images\menu.png" />
+    <Content Include="Resources\images\search.png" />
+    <Content Include="Resources\images\supplier.png" />
+    <Content Include="Resources\images\teamwork.png" />
+    <Content Include="Resources\images\user.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">

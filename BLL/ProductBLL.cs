@@ -13,10 +13,10 @@ namespace BLL
         {
             productDAL = new ProductDAL(); 
         }
-        public List<Product> GetAllProducts()
-        {
-            return productDAL.GetAllProducts(); 
-        }
+        //public List<Product> GetAllProducts()
+        //{
+        //    return productDAL.GetAllProducts(); 
+        //}
 
     }
 }

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class FrmTicket : Form
+    public partial class FrmSupplier : Form
     {
-        public FrmTicket()
+        public FrmSupplier()
         {
             InitializeComponent();
+        }
+
+        private void FrmLocation_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

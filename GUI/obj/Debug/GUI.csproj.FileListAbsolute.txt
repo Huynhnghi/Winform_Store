@@ -90,14 +90,9 @@ C:\Users\Admin\Desktop\Event\GUI\bin\Debug\DTO.pdb
 C:\Users\Admin\Desktop\Event\GUI\bin\Debug\DTO.dll.config
 C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
 C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.FrmCustomer.resources
-C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.FrmEmployees.resources
-C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.FrmLocation.resources
 C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.FrmLogin.resources
 C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.frmMain.resources
-C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.FrmOrganizer.resources
 C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.FrmPofile.resources
-C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.FrmSponsor.resources
-C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.FrmTicket.resources
 C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.Properties.Resources.resources
 C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
 C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
@@ -197,3 +192,5 @@ C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.csproj.CopyComplete
 C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.FrmProduct.resources
 C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.FrmProductList.resources
 C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.Product.resources
+C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.FrmSupplier.resources
+C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.FrmBill.resources

@@ -29,17 +29,18 @@ namespace GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmLogin));
             this.txtMK = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtTDN = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.btnDangNhap = new Guna.UI2.WinForms.Guna2GradientButton();
             this.btnThoat = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.ckHienThi = new System.Windows.Forms.CheckBox();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.SuspendLayout();
             // 
             // txtMK
@@ -142,21 +143,6 @@ namespace GUI
             this.btnThoat.Text = "Thoát";
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Image = global::GUI.Properties.Resources.FaSic;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(500, 500);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(-1, -1);
-            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(475, 617);
-            this.guna2ImageButton1.TabIndex = 0;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -201,6 +187,21 @@ namespace GUI
             this.ckHienThi.Text = "Hiển thị mật khẩu";
             this.ckHienThi.UseVisualStyleBackColor = true;
             this.ckHienThi.CheckedChanged += new System.EventHandler(this.ckHienThi_CheckedChanged);
+            // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("guna2ImageButton1.Image")));
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(500, 500);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(-1, -1);
+            this.guna2ImageButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(475, 617);
+            this.guna2ImageButton1.TabIndex = 0;
             // 
             // FrmLogin
             // 

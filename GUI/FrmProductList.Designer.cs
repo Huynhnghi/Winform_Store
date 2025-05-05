@@ -96,7 +96,10 @@ namespace GUI
             this.product1.Location = new System.Drawing.Point(51, 75);
             this.product1.Margin = new System.Windows.Forms.Padding(4);
             this.product1.Name = "product1";
-            this.product1.Size = new System.Drawing.Size(215, 288);
+            this.product1.ProductImage = null;
+            this.product1.ProductPrice = "Giá";
+            this.product1.SelectedColor = null;
+            this.product1.Size = new System.Drawing.Size(280, 394);
             this.product1.TabIndex = 5;
             // 
             // FrmProductList
