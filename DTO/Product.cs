@@ -8,20 +8,34 @@ namespace DTO
 {
     public class Product
     {
-        private int maSanPham;
-        private string tenSanPham;
-        private double giaNhap;
-        private double giaBan;
-        private int soLuong;
-        private int maLoai;
-        private int maNCC;
+        public string MaSanPham { get; set; } // Mã sản phẩm (MASP)
 
-        public int MaSanPham { get => maSanPham; set => maSanPham = value; }
-        public string TenSanPham { get => tenSanPham; set => tenSanPham = value; }
-        public double GiaNhap { get => giaNhap; set => giaNhap = value; }
-        public double GiaBan { get => giaBan; set => giaBan = value; }
-        public int SoLuong { get => soLuong; set => soLuong = value; }
-        public int MaLoai { get => maLoai; set => maLoai = value; }
-        public int MaNCC { get => maNCC; set => maNCC = value; }
+        public string TenSanPham { get; set; } // Tên sản phẩm (TENSP)
+
+        public string MoTa { get; set; } // Mô tả (MOTA)
+
+        public string HinhAnh { get; set; } // Hình ảnh (HINHANH)
+
+        public string HinhAnhURL { get; set; }
+        public string MaLoai { get; set; } // Mã loại sản phẩm (MALOAI)
+
+        public string MaNCC { get; set; } // Mã nhà cung cấp (MANCC)
+
+        public int TrangThai { get; set; } = 1; // 1 hoạt động, 0 ngừng
+        public Product()
+        {
+        }
+
+        public Product(string maSanPham, string tenSanPham, string moTa, string hinhAnh, string maLoai, string maNCC, int trangThai)
+        {
+            this.MaSanPham = maSanPham;
+            this.TenSanPham = tenSanPham;
+            this.MoTa = moTa;
+            this.HinhAnh = hinhAnh;
+            this.MaLoai = maLoai;
+            this.MaNCC = maNCC;
+            this.TrangThai = trangThai;
+        }
     }
+
 }

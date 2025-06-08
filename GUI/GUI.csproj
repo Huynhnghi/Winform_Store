@@ -62,6 +62,13 @@
     <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
     </Reference>
+    <Reference Include="Magick.NET-Q8-AnyCPU, Version=14.6.0.0, Culture=neutral, PublicKeyToken=2004825badfa91ec, processorArchitecture=MSIL">
+      <HintPath>..\packages\Magick.NET-Q8-AnyCPU.14.6.0\lib\netstandard20\Magick.NET-Q8-AnyCPU.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Magick.NET.Core, Version=14.6.0.0, Culture=neutral, PublicKeyToken=2004825badfa91ec, processorArchitecture=MSIL">
+      <HintPath>..\packages\Magick.NET.Core.14.6.0\lib\netstandard20\Magick.NET.Core.dll</HintPath>
+    </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
@@ -214,17 +221,47 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cart.Designer.cs">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCart.Designer.cs">
+      <DependentUpon>FrmCart.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmCustomer.Designer.cs">
       <DependentUpon>FrmCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmProduct.cs">
+    <Compile Include="FrmReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmProduct.Designer.cs">
-      <DependentUpon>FrmProduct.cs</DependentUpon>
+    <Compile Include="FrmReport.Designer.cs">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSale.Designer.cs">
+      <DependentUpon>FrmSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStaff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStaff.Designer.cs">
+      <DependentUpon>FrmStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStockIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStockIn.Designer.cs">
+      <DependentUpon>FrmStockIn.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmSupplier.cs">
       <SubType>Form</SubType>
@@ -270,11 +307,26 @@
     <Compile Include="Product.Designer.cs">
       <DependentUpon>Product.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Cart.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCart.resx">
+      <DependentUpon>FrmCart.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCustomer.resx">
       <DependentUpon>FrmCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmProduct.resx">
-      <DependentUpon>FrmProduct.cs</DependentUpon>
+    <EmbeddedResource Include="FrmReport.resx">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSale.resx">
+      <DependentUpon>FrmSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStaff.resx">
+      <DependentUpon>FrmStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStockIn.resx">
+      <DependentUpon>FrmStockIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSupplier.resx">
       <DependentUpon>FrmSupplier.cs</DependentUpon>
@@ -317,6 +369,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\images\images\QA9.webp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -342,14 +395,6 @@
     <Content Include="Resources\images\user.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{e46e637b-5dd2-459e-94e1-f1f1cbd207d2}</Project>
-      <Name>BLL</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{b385fa72-71b6-4965-9948-2fd2a01bd667}</Project>
-      <Name>DAL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{fe7bac89-a2f0-46a6-94a4-bdbccc77dc78}</Project>
       <Name>DTO</Name>
@@ -362,5 +407,7 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\MongoDB.Libmongocrypt.1.12.0\build\MongoDB.Libmongocrypt.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MongoDB.Libmongocrypt.1.12.0\build\MongoDB.Libmongocrypt.targets'))" />
+    <Error Condition="!Exists('..\packages\Magick.NET-Q8-AnyCPU.14.6.0\build\netstandard20\Magick.NET-Q8-AnyCPU.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Magick.NET-Q8-AnyCPU.14.6.0\build\netstandard20\Magick.NET-Q8-AnyCPU.targets'))" />
   </Target>
+  <Import Project="..\packages\Magick.NET-Q8-AnyCPU.14.6.0\build\netstandard20\Magick.NET-Q8-AnyCPU.targets" Condition="Exists('..\packages\Magick.NET-Q8-AnyCPU.14.6.0\build\netstandard20\Magick.NET-Q8-AnyCPU.targets')" />
 </Project>

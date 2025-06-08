@@ -26,5 +26,18 @@ namespace GUI
         {
 
         }
+
+        private void guna2ControlBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmMain f = new frmMain();
+            f.ShowDialog();
+            f.Show();
+        }
     }
 }

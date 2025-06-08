@@ -1,32 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DTO
+﻿using System.Text.Json.Serialization;
+using System;
+public class NhanVien
 {
-    public class NhanVien
-    {
-        public int MaNhanVien { get; set; }
-        public string TenNV { get; set; }
-        public string MatKhau { get; set; }
-        public string Email { get; set; }
-        public string DiaChi { get; set; }
-        public string NgayVaoLam { get; set; }
-        public int MaChucVu { get; set; }
-        public NhanVien() { }
+    [JsonPropertyName("MaNV")]
+    public string MaNhanVien { get; set; }
 
-        public NhanVien(int maNV, string tenNV, string matKhau, string email, string diaChi, string ngayVaoLam, int maChucVu)
-        {
-            MaNhanVien = maNV;
-            TenNV = tenNV;
-            MatKhau = matKhau;
-            Email = email;
-            DiaChi = diaChi;
-            NgayVaoLam = ngayVaoLam;
-            MaChucVu = maChucVu;
+    [JsonPropertyName("HoTen")]
+    public string HoTen { get; set; }
 
-        }
-    }
+    [JsonPropertyName("NgaySinh")]
+    public DateTime NgaySinh { get; set; }
+
+    [JsonPropertyName("GioiTinh")]
+    public bool GioiTinh { get; set; }
+
+    [JsonPropertyName("DiaChi")]
+    public string DiaChi { get; set; }
+
+    [JsonPropertyName("SDT")]
+    public string SDT { get; set; }
+
+    [JsonPropertyName("Email")]
+    public string Email { get; set; }
+
+    [JsonPropertyName("NgayVaoLam")]
+    public DateTime NgayVaoLam { get; set; }
+
+    [JsonPropertyName("username")]
+    public string Username { get; set; }
+
+    [JsonPropertyName("password")]
+    public string Password { get; set; }
+
+    [JsonPropertyName("MaCV")]
+    public string MaCV { get; set; }
+
+    [JsonPropertyName("MaQuyen")]
+    public string MaQuyen { get; set; }
 }

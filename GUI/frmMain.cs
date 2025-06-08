@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DTO;
 
 namespace GUI
 {
@@ -19,6 +20,11 @@ namespace GUI
 
         private void KhachHang_Click(object sender, EventArgs e)
         {
+            if (CurrentUser.User.MaQuyen != "Q01")
+            {
+                MessageBox.Show("Chức năng này chỉ dành cho Admin!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             this.Hide();
             FrmCustomer f = new FrmCustomer();
             f.ShowDialog();
@@ -49,10 +55,10 @@ namespace GUI
             }
         }
 
-        private void Event_Click(object sender, EventArgs e)
+        private void Product_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmProduct f = new FrmProduct();
+            FrmProductList f = new FrmProductList();
             f.ShowDialog();
             f.Show();
         }
@@ -86,17 +92,75 @@ namespace GUI
             }
         }
 
-        private void ThongKe_Click(object sender, EventArgs e)
+
+
+        private void Supplier_Click(object sender, EventArgs e)
         {
-            //this.Hide();
-            //FrmReport f = new FrmReport();
-            //f.ShowDialog();
-            //f.Show();
+            if (CurrentUser.User.MaQuyen != "Q01")
+            {
+                MessageBox.Show("Chức năng này chỉ dành cho Admin!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            this.Hide();
+            FrmSupplier f = new FrmSupplier();
+            f.ShowDialog();
+            f.Show();
         }
 
-        private void NoiToChuc_Click(object sender, EventArgs e)
+        private void frmMain_Load(object sender, EventArgs e)
         {
+            var quyen = CurrentUser.User.MaQuyen;
+            if (quyen == "Q01") // Admin
+            {
+                Staff.Enabled = true;
+                Customer.Enabled = true;
+                Product.Enabled = true;
+                Sale.Enabled = true;
+                Bill.Enabled = true;
+                Report.Enabled = true;
+                btnProfile.Enabled = true;
+            }
+            else if (quyen == "Q02") // Bán hàng
+            {
+                btnProfile.Enabled = true;
+                Product.Enabled = true;
+                Bill.Enabled = true;
+            }
+        }
 
+        private void Sale_Click(object sender, EventArgs e)
+        {
+            if (CurrentUser.User.MaQuyen != "Q01")
+            {
+                MessageBox.Show("Chức năng này chỉ dành cho Admin!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+        }
+
+        private void Bill_Click(object sender, EventArgs e)
+        {
+            if (CurrentUser.User.MaQuyen != "Q01")
+            {
+                MessageBox.Show("Chức năng này chỉ dành cho Admin!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            this.Hide();
+            FrmBill f = new FrmBill();
+            f.ShowDialog();
+            f.Show();
+        }
+
+        private void Staff_Click(object sender, EventArgs e)
+        {
+            if (CurrentUser.User.MaQuyen != "Q01")
+            {
+                MessageBox.Show("Chức năng này chỉ dành cho Admin!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            this.Hide();
+            FrmStaff f = new FrmStaff();
+            f.ShowDialog();
+            f.Show();
         }
     }
 }

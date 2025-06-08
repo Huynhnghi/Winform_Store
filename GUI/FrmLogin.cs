@@ -1,58 +1,113 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
+using System.Security.Cryptography;
+using System.Net.Http;
 using System.Text;
-using System.Threading.Tasks;
+using System.Text.Json;
 using System.Windows.Forms;
 using DTO;
-using BLL;
 
 namespace GUI
 {
     public partial class FrmLogin : Form
     {
-        private readonly LoginBLL _loginBLL;
+
         public FrmLogin()
         {
             InitializeComponent();
-            _loginBLL = new LoginBLL();
-            ckHienThi.Cursor = Cursors.Hand;
+            txtMK.PasswordChar = '*';
         }
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-            txtMK.PasswordChar = '*';
-            txtTDN.Focus();
+            // Không cần xử lý gì khi load form
         }
 
-        private void btnDangNhap_Click(object sender, EventArgs e)
+        private string HashPassword(string password)
         {
-            string username = txtTDN.Text;
-            string password = txtMK.Text;
-
-            // Gọi hàm từ BLL
-            bool loginSuccess = _loginBLL.CheckLogin(username, password); // hoặc _loginBLL.LoginDirect(username, password);
-
-            if (loginSuccess)
+            using (var sha256 = SHA256.Create())
             {
-                // Nếu bạn có class CurrentUser (singleton), gọi như sau:
-                CurrentUser.Instance.Username = username;
-
-                MessageBox.Show("Đăng nhập thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                this.Hide();
-                Form mainForm = new frmMain();
-                mainForm.Show();
-            }
-            else
-            {
-                MessageBox.Show("Đăng nhập không thành công. Vui lòng kiểm tra lại tên đăng nhập và mật khẩu.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                var bytes = Encoding.UTF8.GetBytes(password);
+                var hashBytes = sha256.ComputeHash(bytes);
+                return Convert.ToBase64String(hashBytes);
             }
         }
 
+        private async void btnDangNhap_Click(object sender, EventArgs e)
+        {
+            string username = txtTDN.Text.Trim();
+            string password = txtMK.Text.Trim();
+
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(HashPassword(password)))
+            {
+                MessageBox.Show("Vui lòng nhập tài khoản và mật khẩu.");
+                return;
+            }
+
+            var loginData = new
+            {
+                Username = username,
+                Password = password
+            };
+
+            try
+            {
+                var handler = new HttpClientHandler
+                {
+                    ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+                };
+
+                var client = new HttpClient(handler)
+                {
+                    BaseAddress = new Uri("https://localhost:7265/")
+                };
+
+
+                string json = JsonSerializer.Serialize(loginData);
+                var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+                var response = await client.PostAsync("api/NhanVien/login", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string result = await response.Content.ReadAsStringAsync();
+
+                    try
+                    {
+                        var nhanVien = JsonSerializer.Deserialize<NhanVien>(result, new JsonSerializerOptions
+                        {
+                            PropertyNameCaseInsensitive = true
+                        });
+
+                        if (nhanVien != null)
+                        {
+                            CurrentUser.User = nhanVien; // Gán người dùng hiện tại
+
+                            frmMain mainForm = new frmMain();
+                            this.Hide();
+                            mainForm.ShowDialog();
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không thể đọc thông tin người dùng từ phản hồi.");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Lỗi khi phân tích JSON: " + ex.Message);
+                    }
+                }
+                else
+                {
+                    string error = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show("Sai tài khoản hoặc mật khẩu.\n" + error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi gọi API:\n" + ex.Message);
+            }
+        }
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
@@ -61,19 +116,11 @@ namespace GUI
 
         private void ckHienThi_CheckedChanged(object sender, EventArgs e)
         {
-            if (ckHienThi.Checked == true)
-            {
-                txtMK.PasswordChar = (char)0;
-            }
-            else
-            {
-                txtMK.PasswordChar = '*';
-            }
+            txtMK.PasswordChar = ckHienThi.Checked ? '\0' : '*';
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
+        private void guna2HtmlLabel3_Click(object sender, EventArgs e) { }
 
-        }
+        private void guna2HtmlLabel5_Click(object sender, EventArgs e) { }
     }
 }

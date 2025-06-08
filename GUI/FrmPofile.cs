@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DAL;
-using BLL;
 using DTO;
 
 namespace GUI
@@ -20,7 +18,6 @@ namespace GUI
         {
             InitializeComponent();
             //_accountBLL = new LoginBLL();
-            var loginDal = new LoginDAL();
             txtPassOld.PasswordChar = '*';
             txtNewPass.PasswordChar = '*';
             txtNhapLaiPass.PasswordChar = '*';

@@ -10,7 +10,7 @@ namespace DTO
     {
         private static CurrentUser _instance;
 
-        public string Username { get; set; }
+        public static NhanVien User { get; set; }
 
         private CurrentUser() { }
 
