@@ -12,10 +12,9 @@ namespace DTO
         public string TenKM { get; set; }
         public string MoTa { get; set; }
         public string MaLoaiKM { get; set; }
-        public int PhanTramGiam { get; set; }
-        //public int GiamToiDa { get; set; }
-        //public int GiamTien { get; set; }
-        //public int DieuKien { get; set; }
+        public int? PhanTramGiam { get; set; }
+        public decimal? GiamTien { get; set; }
+        public decimal? DieuKien { get; set; }
         public DateTime NgayBatDau { get; set; }
         public DateTime NgayKetThuc { get; set; }
         public int TrangThai { get; set; }

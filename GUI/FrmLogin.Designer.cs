@@ -205,7 +205,7 @@ namespace GUI
             this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
             this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.guna2ImageButton1.Image = global::GUI.Properties.Resources.FaSic;
+            this.guna2ImageButton1.Image = global::GUI.Properties.Resources.FaSic1;
             this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
             this.guna2ImageButton1.ImageRotate = 0F;
             this.guna2ImageButton1.ImageSize = new System.Drawing.Size(500, 500);

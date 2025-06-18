@@ -107,7 +107,6 @@ namespace GUI
 
                 if (!chiTietResponse.IsSuccessStatusCode)
                 {
-                    // Không hiển thị MessageBox ở đây nếu chỉ muốn lướt qua yên lặng
                     continue;
                 }
 
@@ -130,14 +129,10 @@ namespace GUI
                 {
                     continue;
                 }
-
-                // Bỏ qua nếu không có biến thể
                 if (variants == null || variants.Count == 0)
                     continue;
 
                 var productControl = new Product();
-
-                // Load ảnh nếu có
                 string imageUrl = !string.IsNullOrEmpty(variants[0].HinhAnh)
                                     ? $"https://localhost:7265/images/{variants[0].HinhAnh}"
                                     : null;
@@ -174,6 +169,11 @@ namespace GUI
 
                 productControl.ProductName = item.TenSanPham;
                 productControl.ProductPrice = variants[0].GiaBan.ToString("N0") + " VNĐ";
+                // Gán mã sản phẩm để truyền vào gọi tồn kho
+                productControl.MaSanPham = item.MaSanPham;
+
+                // Gọi tồn kho mặc định với biến thể đầu tiên
+                await productControl.LoadStockQuantityPublic(variants[0].Size, variants[0].MauSac);
 
                 List<string> colors = variants.Select(v => v.MauSac).Distinct().ToList();
                 productControl.LoadColors(colors);
@@ -393,7 +393,8 @@ namespace GUI
 
             this.Hide();
             frmCart.FormClosed += (s, args) => this.Show(); // Hiện lại form chính khi frmCart đóng
-            frmCart.Show();
+            frmCart.ShowDialog();
+
         }
     }
 }

@@ -92,7 +92,7 @@ namespace GUI
             this.dgvNCC.Margin = new System.Windows.Forms.Padding(4);
             this.dgvNCC.Name = "dgvNCC";
             this.dgvNCC.RowHeadersWidth = 51;
-            this.dgvNCC.Size = new System.Drawing.Size(723, 615);
+            this.dgvNCC.Size = new System.Drawing.Size(723, 590);
             this.dgvNCC.TabIndex = 0;
             this.dgvNCC.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNCC_CellClick);
             // 
@@ -117,7 +117,7 @@ namespace GUI
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(739, 703);
+            this.groupBox4.Size = new System.Drawing.Size(739, 656);
             this.groupBox4.TabIndex = 26;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Danh sách nhà cung cấp";

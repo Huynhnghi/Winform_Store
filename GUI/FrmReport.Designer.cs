@@ -66,14 +66,14 @@ namespace GUI
             this.groupBox4.Size = new System.Drawing.Size(1308, 474);
             this.groupBox4.TabIndex = 11;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Danh sách khách hàng";
+            this.groupBox4.Text = "Danh sách thống kê";
             // 
             // lbTotal
             // 
             this.lbTotal.AutoSize = true;
             this.lbTotal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTotal.ForeColor = System.Drawing.Color.DarkRed;
-            this.lbTotal.Location = new System.Drawing.Point(1031, 428);
+            this.lbTotal.Location = new System.Drawing.Point(1040, 432);
             this.lbTotal.Name = "lbTotal";
             this.lbTotal.Size = new System.Drawing.Size(35, 28);
             this.lbTotal.TabIndex = 14;
@@ -84,7 +84,7 @@ namespace GUI
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(876, 428);
+            this.label2.Location = new System.Drawing.Point(885, 432);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(149, 28);
             this.label2.TabIndex = 13;
@@ -94,11 +94,11 @@ namespace GUI
             // 
             this.dgvKH.BackgroundColor = System.Drawing.Color.White;
             this.dgvKH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKH.Location = new System.Drawing.Point(24, 41);
+            this.dgvKH.Location = new System.Drawing.Point(244, 30);
             this.dgvKH.Name = "dgvKH";
             this.dgvKH.RowHeadersWidth = 60;
             this.dgvKH.RowTemplate.Height = 24;
-            this.dgvKH.Size = new System.Drawing.Size(1252, 373);
+            this.dgvKH.Size = new System.Drawing.Size(819, 373);
             this.dgvKH.TabIndex = 0;
             // 
             // guna2ControlBox3
@@ -147,9 +147,9 @@ namespace GUI
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
             this.label1.Location = new System.Drawing.Point(7, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(264, 38);
+            this.label1.Size = new System.Drawing.Size(231, 38);
             this.label1.TabIndex = 16;
-            this.label1.Text = "Quản lý khách hàng";
+            this.label1.Text = "Quản lý thống kê";
             // 
             // guna2Separator1
             // 
@@ -182,11 +182,12 @@ namespace GUI
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label6.Location = new System.Drawing.Point(745, 38);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(153, 28);
+            this.label6.Size = new System.Drawing.Size(131, 28);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Loại khách hàng";
+            this.label6.Text = "Loại thống kê";
             // 
             // cbbTypeReport
             // 
@@ -198,6 +199,7 @@ namespace GUI
             this.cbbTypeReport.Size = new System.Drawing.Size(217, 30);
             this.cbbTypeReport.TabIndex = 7;
             this.cbbTypeReport.UseSelectable = true;
+            this.cbbTypeReport.SelectedIndexChanged += new System.EventHandler(this.cbbTypeReport_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -206,9 +208,9 @@ namespace GUI
             this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(7, 34);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(131, 28);
+            this.label7.Size = new System.Drawing.Size(86, 28);
             this.label7.TabIndex = 9;
-            this.label7.Text = "Ngày bắt đầu";
+            this.label7.Text = "Từ ngày:";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // DTPStart
@@ -233,9 +235,9 @@ namespace GUI
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(377, 33);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(131, 28);
+            this.label8.Size = new System.Drawing.Size(99, 28);
             this.label8.TabIndex = 11;
-            this.label8.Text = "Ngày bắt đầu";
+            this.label8.Text = "Đến ngày:";
             // 
             // DTPEnd
             // 

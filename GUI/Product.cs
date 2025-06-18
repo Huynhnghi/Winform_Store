@@ -1,13 +1,14 @@
 ﻿using System;
-using System.Net.Http;
-using System.Text.Json;
+using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
-using ImageMagick;
-using System.Drawing;
+using System.Net.Http;
+using System.Text.Json;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Collections.Generic;
 using DTO;
+using ImageMagick;
 
 namespace GUI
 {
@@ -17,6 +18,9 @@ namespace GUI
         private List<DetailProduct> _variants = new List<DetailProduct>();
         private string selectedColor = null;
         private string selectedSize = null;
+
+        public string MaSanPham { get; set; }
+
         public Product()
         {
             InitializeComponent();
@@ -25,7 +29,6 @@ namespace GUI
             cbbMauSac.DropDownStyle = ComboBoxStyle.DropDownList;
         }
 
-       
         public Image ProductImage
         {
             get => pic.Image;
@@ -65,32 +68,78 @@ namespace GUI
             get { return (int)NUPQuantity.Value; }
         }
 
-        // Load danh sách màu vào ComboBox
-        public void LoadColors(List<string> colors)
+        public string StockQuantity
         {
-            cbbMauSac.SelectedIndexChanged -= cbbMauSac_SelectedIndexChanged;
-            cbbMauSac.Items.Clear();
-
-            foreach (var color in colors)
-            {
-                cbbMauSac.Items.Add(color);
-            }
-
-            if (colors.Count > 0)
-                cbbMauSac.SelectedIndex = 0;
-
-            cbbMauSac.SelectedIndexChanged += cbbMauSac_SelectedIndexChanged;
+            get => txtStock.Text;
+            set => txtStock.Text = value;
         }
 
-
-        // Event handler for ComboBox selection change
-        private void cbbMauSac_SelectedIndexChanged(object sender, EventArgs e)
+        private async void cbbMauSac_SelectedIndexChanged(object sender, EventArgs e)
         {
             selectedColor = cbbMauSac.SelectedItem?.ToString();
             if (!string.IsNullOrEmpty(selectedColor))
             {
                 LoadImageForSelectedColor(selectedColor);
+                await LoadStockQuantityAsync(MaSanPham, selectedSize, selectedColor);
             }
+        }
+
+        public async Task LoadStockQuantityPublic(string size, string mauSac)
+        {
+            selectedSize = size;
+            selectedColor = mauSac;
+            await LoadStockQuantityAsync(MaSanPham, size, mauSac);
+        }
+
+        private async Task LoadStockQuantityAsync(string maSP, string size, string mauSac)
+        {
+            if (string.IsNullOrWhiteSpace(maSP) || string.IsNullOrWhiteSpace(size) || string.IsNullOrWhiteSpace(mauSac))
+                return;
+
+            string encodedColor = Uri.EscapeDataString(mauSac);
+            string apiUrl = $"https://localhost:7265/api/BienTheSanPham/tonkho?maSP={maSP}&size={size}&mauSac={encodedColor}";
+
+            try
+            {
+                var handler = new HttpClientHandler
+                {
+                    ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+                };
+
+                using (var client = new HttpClient(handler))
+                {
+                    var response = await client.GetAsync(apiUrl);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var json = await response.Content.ReadAsStringAsync();
+                        var tonKhoObj = JsonSerializer.Deserialize<TonKhoResponse>(json, new JsonSerializerOptions
+                        {
+                            PropertyNameCaseInsensitive = true
+                        });
+
+                        if (tonKhoObj != null)
+                        {
+                            StockQuantity = tonKhoObj.TonKho.ToString();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Không thể lấy tồn kho: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void LoadColors(List<string> colors)
+        {
+            cbbMauSac.SelectedIndexChanged -= cbbMauSac_SelectedIndexChanged;
+            cbbMauSac.Items.Clear();
+            foreach (var color in colors)
+            {
+                cbbMauSac.Items.Add(color);
+            }
+            if (colors.Count > 0) cbbMauSac.SelectedIndex = 0;
+            cbbMauSac.SelectedIndexChanged += cbbMauSac_SelectedIndexChanged;
         }
 
         // Method to load image based on selected color
@@ -115,10 +164,19 @@ namespace GUI
 
                         var imageBytes = await imgResponse.Content.ReadAsByteArrayAsync();
 
-                        using (var ms = new MemoryStream(imageBytes))
+                        using (var magickImage = new MagickImage(imageBytes))
                         {
-                            Bitmap bitmap = new Bitmap(ms);
-                            ProductImage = bitmap;
+                            magickImage.Resize(220, 160);
+                            magickImage.Extent(220, 160, Gravity.Center, MagickColors.Transparent);
+                            magickImage.Format = MagickFormat.Bmp;
+
+                            using (var ms = new MemoryStream())
+                            {
+                                magickImage.Write(ms);
+                                ms.Position = 0;
+                                Bitmap bitmap = new Bitmap(ms);
+                                ProductImage = bitmap;
+                            }
                         }
                     }
                     catch (Exception ex)
@@ -144,19 +202,19 @@ namespace GUI
                     {
                         if (button.Text == "S" && button.BackColor == Color.Green) 
                         {
-                            return "Small (S)";
+                            return "S";
                         }
                         else if (button.Text == "M" && button.BackColor == Color.Green)
                         {
-                            return "Medium (M)";
+                            return "M";
                         }
                         else if (button.Text == "L" && button.BackColor == Color.Green)
                         {
-                            return "Large (L)";
+                            return "L";
                         }
                         else if (button.Text == "XL" && button.BackColor == Color.Green)
                         {
-                            return "Extra Large (XL)";
+                            return "XL";
                         }
                     }
                 }
@@ -219,15 +277,11 @@ namespace GUI
                     }
                 }
 
-                // Đổi màu button được chọn
                 btn.BackColor = Color.Green;
-
-                // Tìm variant tương ứng color + size
                 var variant = _variants.FirstOrDefault(v => v.MauSac == selectedColor && v.Size == selectedSize);
 
                 if (variant != null)
                 {
-                    // Cập nhật barcode và giá
                     ProductSKU = variant.Barcode;
                     ProductPrice = variant.GiaBan.ToString("N0") + " VNĐ";
                 }
@@ -306,9 +360,25 @@ namespace GUI
             {
                 if (control is Button button)
                 {
-                    button.Click -= SizeButton_Click; // tránh gắn nhiều lần
+                    button.Click -= SizeButton_Click; 
                     button.Click += SizeButton_Click;
                 }
+            }
+        }
+
+        private void NUPQuantity_ValueChanged(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtStock.Text, out int stock))
+            {
+                if (NUPQuantity.Value > stock)
+                {
+                    MessageBox.Show($"Số lượng vượt quá số lượng tồn kho ({stock})", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    NUPQuantity.Value = stock; 
+                }
+            }
+            else
+            {
+                MessageBox.Show("Không thể xác định số lượng tồn kho.", "Lỗi dữ liệu", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

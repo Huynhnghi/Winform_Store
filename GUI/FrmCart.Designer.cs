@@ -68,6 +68,10 @@ namespace GUI
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.cbbPPTT = new MetroFramework.Controls.MetroComboBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtTT = new System.Windows.Forms.Label();
+            this.txtGiamGia = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -130,7 +134,7 @@ namespace GUI
             // 
             this.flwCart.Location = new System.Drawing.Point(19, 69);
             this.flwCart.Name = "flwCart";
-            this.flwCart.Size = new System.Drawing.Size(436, 605);
+            this.flwCart.Size = new System.Drawing.Size(459, 605);
             this.flwCart.TabIndex = 10;
             // 
             // groupBox1
@@ -147,7 +151,7 @@ namespace GUI
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.DarkRed;
-            this.groupBox1.Location = new System.Drawing.Point(461, 70);
+            this.groupBox1.Location = new System.Drawing.Point(484, 70);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(362, 234);
             this.groupBox1.TabIndex = 11;
@@ -310,7 +314,7 @@ namespace GUI
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.DarkRed;
-            this.groupBox2.Location = new System.Drawing.Point(838, 70);
+            this.groupBox2.Location = new System.Drawing.Point(861, 70);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(362, 125);
             this.groupBox2.TabIndex = 20;
@@ -378,9 +382,9 @@ namespace GUI
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.DarkRed;
-            this.groupBox3.Location = new System.Drawing.Point(461, 310);
+            this.groupBox3.Location = new System.Drawing.Point(484, 310);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(739, 160);
+            this.groupBox3.Size = new System.Drawing.Size(716, 160);
             this.groupBox3.TabIndex = 21;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Ghi chú hóa đơn";
@@ -446,7 +450,7 @@ namespace GUI
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(930, 473);
+            this.label7.Location = new System.Drawing.Point(898, 569);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(154, 28);
             this.label7.TabIndex = 21;
@@ -457,7 +461,7 @@ namespace GUI
             this.txtTotal.AutoSize = true;
             this.txtTotal.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTotal.ForeColor = System.Drawing.Color.Red;
-            this.txtTotal.Location = new System.Drawing.Point(1090, 478);
+            this.txtTotal.Location = new System.Drawing.Point(1073, 569);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(29, 23);
             this.txtTotal.TabIndex = 22;
@@ -472,11 +476,12 @@ namespace GUI
             this.btnAccpet.FillColor = System.Drawing.Color.DarkRed;
             this.btnAccpet.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAccpet.ForeColor = System.Drawing.Color.White;
-            this.btnAccpet.Location = new System.Drawing.Point(800, 517);
+            this.btnAccpet.Location = new System.Drawing.Point(786, 647);
             this.btnAccpet.Name = "btnAccpet";
             this.btnAccpet.Size = new System.Drawing.Size(218, 45);
             this.btnAccpet.TabIndex = 23;
             this.btnAccpet.Text = "Xác nhận thanh toán";
+            this.btnAccpet.Click += new System.EventHandler(this.btnAccpet_Click);
             // 
             // btnPrintBill
             // 
@@ -487,7 +492,7 @@ namespace GUI
             this.btnPrintBill.FillColor = System.Drawing.Color.ForestGreen;
             this.btnPrintBill.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrintBill.ForeColor = System.Drawing.Color.White;
-            this.btnPrintBill.Location = new System.Drawing.Point(1045, 517);
+            this.btnPrintBill.Location = new System.Drawing.Point(1054, 647);
             this.btnPrintBill.Name = "btnPrintBill";
             this.btnPrintBill.Size = new System.Drawing.Size(155, 45);
             this.btnPrintBill.TabIndex = 24;
@@ -501,7 +506,7 @@ namespace GUI
             this.groupBox4.Controls.Add(this.label8);
             this.groupBox4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.ForeColor = System.Drawing.Color.DarkRed;
-            this.groupBox4.Location = new System.Drawing.Point(838, 70);
+            this.groupBox4.Location = new System.Drawing.Point(861, 70);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(362, 125);
             this.groupBox4.TabIndex = 20;
@@ -518,6 +523,7 @@ namespace GUI
             this.cbbKM.Size = new System.Drawing.Size(179, 30);
             this.cbbKM.TabIndex = 20;
             this.cbbKM.UseSelectable = true;
+            this.cbbKM.SelectedIndexChanged += new System.EventHandler(this.cbbKM_SelectedIndexChanged);
             // 
             // txtKM
             // 
@@ -567,7 +573,7 @@ namespace GUI
             this.groupBox5.Controls.Add(this.label14);
             this.groupBox5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.ForeColor = System.Drawing.Color.DarkRed;
-            this.groupBox5.Location = new System.Drawing.Point(838, 201);
+            this.groupBox5.Location = new System.Drawing.Point(861, 201);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(362, 103);
             this.groupBox5.TabIndex = 21;
@@ -579,7 +585,7 @@ namespace GUI
             this.cbbPPTT.ForeColor = System.Drawing.Color.Black;
             this.cbbPPTT.FormattingEnabled = true;
             this.cbbPPTT.ItemHeight = 24;
-            this.cbbPPTT.Location = new System.Drawing.Point(162, 37);
+            this.cbbPPTT.Location = new System.Drawing.Point(162, 33);
             this.cbbPPTT.Name = "cbbPPTT";
             this.cbbPPTT.Size = new System.Drawing.Size(179, 30);
             this.cbbPPTT.TabIndex = 20;
@@ -596,11 +602,60 @@ namespace GUI
             this.label14.TabIndex = 12;
             this.label14.Text = "Phương thức";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(898, 524);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(91, 25);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "Giảm giá:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(898, 486);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(101, 25);
+            this.label15.TabIndex = 26;
+            this.label15.Text = "Tổng tiền: ";
+            // 
+            // txtTT
+            // 
+            this.txtTT.AutoSize = true;
+            this.txtTT.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTT.ForeColor = System.Drawing.Color.Black;
+            this.txtTT.Location = new System.Drawing.Point(989, 486);
+            this.txtTT.Name = "txtTT";
+            this.txtTT.Size = new System.Drawing.Size(33, 25);
+            this.txtTT.TabIndex = 27;
+            this.txtTT.Text = "0đ";
+            this.txtTT.Click += new System.EventHandler(this.txtTT_Click);
+            // 
+            // txtGiamGia
+            // 
+            this.txtGiamGia.AutoSize = true;
+            this.txtGiamGia.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGiamGia.ForeColor = System.Drawing.Color.Black;
+            this.txtGiamGia.Location = new System.Drawing.Point(989, 524);
+            this.txtGiamGia.Name = "txtGiamGia";
+            this.txtGiamGia.Size = new System.Drawing.Size(33, 25);
+            this.txtGiamGia.TabIndex = 28;
+            this.txtGiamGia.Text = "0đ";
+            // 
             // FrmCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1248, 704);
+            this.Controls.Add(this.txtGiamGia);
+            this.Controls.Add(this.txtTT);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.btnPrintBill);
             this.Controls.Add(this.btnAccpet);
@@ -660,7 +715,6 @@ namespace GUI
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox3;
         private Guna.UI2.WinForms.Guna2DateTimePicker DTDateBuy;
-        private Guna.UI2.WinForms.Guna2TextBox txtNote;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label7;
@@ -677,5 +731,10 @@ namespace GUI
         private System.Windows.Forms.GroupBox groupBox5;
         private MetroFramework.Controls.MetroComboBox cbbPPTT;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label txtTT;
+        private System.Windows.Forms.Label txtGiamGia;
+        private Guna.UI2.WinForms.Guna2TextBox txtNote;
     }
 }

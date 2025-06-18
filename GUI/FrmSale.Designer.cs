@@ -64,6 +64,10 @@ namespace GUI
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_Search = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtGiamTien = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtDieuKien = new Guna.UI2.WinForms.Guna2TextBox();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSale)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -114,7 +118,7 @@ namespace GUI
             this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(739, 665);
+            this.groupBox4.Size = new System.Drawing.Size(739, 781);
             this.groupBox4.TabIndex = 11;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Danh sách khuyến mãi";
@@ -127,7 +131,7 @@ namespace GUI
             this.dgvSale.Name = "dgvSale";
             this.dgvSale.RowHeadersWidth = 60;
             this.dgvSale.RowTemplate.Height = 24;
-            this.dgvSale.Size = new System.Drawing.Size(689, 597);
+            this.dgvSale.Size = new System.Drawing.Size(689, 711);
             this.dgvSale.TabIndex = 0;
             this.dgvSale.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSale_CellClick);
             // 
@@ -161,7 +165,7 @@ namespace GUI
             this.cbbstatus.ForeColor = System.Drawing.Color.Black;
             this.cbbstatus.FormattingEnabled = true;
             this.cbbstatus.ItemHeight = 24;
-            this.cbbstatus.Location = new System.Drawing.Point(326, 217);
+            this.cbbstatus.Location = new System.Drawing.Point(326, 290);
             this.cbbstatus.Name = "cbbstatus";
             this.cbbstatus.Size = new System.Drawing.Size(179, 30);
             this.cbbstatus.TabIndex = 7;
@@ -172,7 +176,7 @@ namespace GUI
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(321, 184);
+            this.label6.Location = new System.Drawing.Point(321, 257);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(98, 28);
             this.label6.TabIndex = 6;
@@ -358,6 +362,10 @@ namespace GUI
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.txtDieuKien);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.txtGiamTien);
             this.groupBox2.Controls.Add(this.CBBTypeKM);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label5);
@@ -382,7 +390,7 @@ namespace GUI
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(541, 402);
+            this.groupBox2.Size = new System.Drawing.Size(541, 498);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin khuyến mãi";
@@ -414,7 +422,7 @@ namespace GUI
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(321, 269);
+            this.label5.Location = new System.Drawing.Point(321, 326);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 28);
             this.label5.TabIndex = 16;
@@ -433,7 +441,7 @@ namespace GUI
             this.txtAmount.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtAmount.ForeColor = System.Drawing.Color.Black;
             this.txtAmount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtAmount.Location = new System.Drawing.Point(326, 302);
+            this.txtAmount.Location = new System.Drawing.Point(326, 359);
             this.txtAmount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.PasswordChar = '\0';
@@ -535,7 +543,7 @@ namespace GUI
             this.groupBox3.Controls.Add(this.btnAdd);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.DarkRed;
-            this.groupBox3.Location = new System.Drawing.Point(15, 609);
+            this.groupBox3.Location = new System.Drawing.Point(13, 725);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
@@ -591,11 +599,79 @@ namespace GUI
             this.btn_Search.Size = new System.Drawing.Size(85, 66);
             this.btn_Search.TabIndex = 0;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(321, 183);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(96, 28);
+            this.label11.TabIndex = 20;
+            this.label11.Text = "Giảm tiền";
+            // 
+            // txtGiamTien
+            // 
+            this.txtGiamTien.BorderColor = System.Drawing.Color.DarkRed;
+            this.txtGiamTien.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtGiamTien.DefaultText = "";
+            this.txtGiamTien.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtGiamTien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtGiamTien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGiamTien.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGiamTien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGiamTien.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtGiamTien.ForeColor = System.Drawing.Color.Black;
+            this.txtGiamTien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGiamTien.Location = new System.Drawing.Point(326, 219);
+            this.txtGiamTien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtGiamTien.Name = "txtGiamTien";
+            this.txtGiamTien.PasswordChar = '\0';
+            this.txtGiamTien.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtGiamTien.PlaceholderText = "";
+            this.txtGiamTien.SelectedText = "";
+            this.txtGiamTien.Size = new System.Drawing.Size(179, 34);
+            this.txtGiamTien.TabIndex = 19;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(20, 402);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(93, 28);
+            this.label12.TabIndex = 22;
+            this.label12.Text = "Điều kiện";
+            // 
+            // txtDieuKien
+            // 
+            this.txtDieuKien.BorderColor = System.Drawing.Color.DarkRed;
+            this.txtDieuKien.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDieuKien.DefaultText = "";
+            this.txtDieuKien.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDieuKien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDieuKien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDieuKien.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDieuKien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDieuKien.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDieuKien.ForeColor = System.Drawing.Color.Black;
+            this.txtDieuKien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDieuKien.Location = new System.Drawing.Point(17, 438);
+            this.txtDieuKien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtDieuKien.Name = "txtDieuKien";
+            this.txtDieuKien.PasswordChar = '\0';
+            this.txtDieuKien.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txtDieuKien.PlaceholderText = "";
+            this.txtDieuKien.SelectedText = "";
+            this.txtDieuKien.Size = new System.Drawing.Size(488, 34);
+            this.txtDieuKien.TabIndex = 21;
+            // 
             // FrmSale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1369, 751);
+            this.ClientSize = new System.Drawing.Size(1369, 873);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.guna2ControlBox3);
             this.Controls.Add(this.guna2ControlBox2);
@@ -657,5 +733,9 @@ namespace GUI
         private MetroFramework.Controls.MetroComboBox cbbstatus;
         private MetroFramework.Controls.MetroComboBox CBBTypeKM;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private Guna.UI2.WinForms.Guna2TextBox txtGiamTien;
+        private System.Windows.Forms.Label label12;
+        private Guna.UI2.WinForms.Guna2TextBox txtDieuKien;
     }
 }

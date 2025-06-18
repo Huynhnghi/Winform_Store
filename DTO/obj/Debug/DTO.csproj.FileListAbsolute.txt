@@ -66,3 +66,5 @@ C:\Users\NGHI\Desktop\Desktop\Store\DTO\bin\Debug\System.ValueTuple.dll
 C:\Users\NGHI\Desktop\Desktop\Store\DTO\bin\Debug\System.Text.Encodings.Web.xml
 C:\Users\NGHI\Desktop\Desktop\Store\DTO\bin\Debug\System.Text.Json.xml
 C:\Users\NGHI\Desktop\Desktop\Store\DTO\bin\Debug\System.ValueTuple.xml
+C:\Users\NGHI\Desktop\Desktop\Store\DTO\bin\Debug\Newtonsoft.Json.dll
+C:\Users\NGHI\Desktop\Desktop\Store\DTO\bin\Debug\Newtonsoft.Json.xml

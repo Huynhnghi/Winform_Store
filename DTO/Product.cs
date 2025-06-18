@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace DTO
 {
@@ -10,7 +11,8 @@ namespace DTO
     {
         public string MaSanPham { get; set; } // Mã sản phẩm (MASP)
 
-        public string TenSanPham { get; set; } // Tên sản phẩm (TENSP)
+        [JsonProperty("TenSP")] // ánh xạ chính xác từ field JSON
+        public string TenSanPham { get; set; }
 
         public string MoTa { get; set; } // Mô tả (MOTA)
 

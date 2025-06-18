@@ -64,7 +64,7 @@ namespace GUI
             this.selectSL.BackColor = System.Drawing.Color.Transparent;
             this.selectSL.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.selectSL.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.selectSL.Location = new System.Drawing.Point(299, 111);
+            this.selectSL.Location = new System.Drawing.Point(316, 71);
             this.selectSL.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.selectSL.Minimum = new decimal(new int[] {
             1,

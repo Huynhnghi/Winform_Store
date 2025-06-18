@@ -110,3 +110,5 @@ C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.FrmCart.resources
 C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.FrmStockIn.resources
 C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.FrmSale.resources
 C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.FrmReport.resources
+C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.FrmPrintBill.resources
+C:\Users\NGHI\Desktop\Desktop\Store\GUI\obj\Debug\GUI.FrmSelectStock.resources

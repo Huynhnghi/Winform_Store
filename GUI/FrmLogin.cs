@@ -80,7 +80,10 @@ namespace GUI
 
                         if (nhanVien != null)
                         {
-                            CurrentUser.User = nhanVien; // Gán người dùng hiện tại
+                            CurrentUser.User = nhanVien;
+                            SessionManager.MaNhanVien = nhanVien.MaNhanVien;
+
+                            MessageBox.Show($"Đăng nhập thành công. Xin chào {nhanVien.HoTen}!", "Thông báo");
 
                             frmMain mainForm = new frmMain();
                             this.Hide();

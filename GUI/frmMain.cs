@@ -72,10 +72,9 @@ namespace GUI
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FrmPofile f = new FrmPofile();
-            f.ShowDialog();
-           f.Show();
+            FrmPofile frm = new FrmPofile();
+            frm.FormClosed += (s, args) => this.Show(); // Hiện lại form chính khi FrmPofile đóng
+            frm.Show();
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)

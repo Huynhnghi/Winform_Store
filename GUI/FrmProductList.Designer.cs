@@ -103,10 +103,10 @@ namespace GUI
             // 
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(419, 74);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(446, 74);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(929, 689);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(902, 735);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
             // groupBox1
@@ -119,7 +119,7 @@ namespace GUI
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(399, 97);
+            this.groupBox1.Size = new System.Drawing.Size(426, 97);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tìm kiếm";
@@ -144,7 +144,7 @@ namespace GUI
             this.txtBarcode.PasswordChar = '\0';
             this.txtBarcode.PlaceholderText = "";
             this.txtBarcode.SelectedText = "";
-            this.txtBarcode.Size = new System.Drawing.Size(236, 49);
+            this.txtBarcode.Size = new System.Drawing.Size(353, 49);
             this.txtBarcode.TabIndex = 1;
             this.txtBarcode.TextChanged += new System.EventHandler(this.txtBarcode_TextChanged);
             // 
@@ -170,7 +170,7 @@ namespace GUI
             this.flowCart.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flowCart.Location = new System.Drawing.Point(13, 180);
             this.flowCart.Name = "flowCart";
-            this.flowCart.Size = new System.Drawing.Size(400, 525);
+            this.flowCart.Size = new System.Drawing.Size(427, 525);
             this.flowCart.TabIndex = 26;
             this.flowCart.Paint += new System.Windows.Forms.PaintEventHandler(this.flowCart_Paint);
             // 
@@ -185,9 +185,9 @@ namespace GUI
             this.btnThanhToan.FillColor = System.Drawing.Color.DarkRed;
             this.btnThanhToan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThanhToan.ForeColor = System.Drawing.Color.White;
-            this.btnThanhToan.Location = new System.Drawing.Point(239, 711);
+            this.btnThanhToan.Location = new System.Drawing.Point(12, 760);
             this.btnThanhToan.Name = "btnThanhToan";
-            this.btnThanhToan.Size = new System.Drawing.Size(173, 52);
+            this.btnThanhToan.Size = new System.Drawing.Size(418, 49);
             this.btnThanhToan.TabIndex = 1;
             this.btnThanhToan.Text = "Thanh toán";
             this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
@@ -218,7 +218,7 @@ namespace GUI
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1387, 798);
+            this.ClientSize = new System.Drawing.Size(1387, 810);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnThanhToan);

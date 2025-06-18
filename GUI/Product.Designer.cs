@@ -30,6 +30,9 @@ namespace GUI
         private void InitializeComponent()
         {
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtStock = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.NUPQuantity = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -53,6 +56,9 @@ namespace GUI
             // 
             // metroPanel1
             // 
+            this.metroPanel1.Controls.Add(this.label6);
+            this.metroPanel1.Controls.Add(this.txtStock);
+            this.metroPanel1.Controls.Add(this.label4);
             this.metroPanel1.Controls.Add(this.NUPQuantity);
             this.metroPanel1.Controls.Add(this.label3);
             this.metroPanel1.Controls.Add(this.label2);
@@ -74,6 +80,42 @@ namespace GUI
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(85, 363);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(85, 23);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "sản phẩm";
+            // 
+            // txtStock
+            // 
+            this.txtStock.AutoSize = true;
+            this.txtStock.BackColor = System.Drawing.Color.Transparent;
+            this.txtStock.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtStock.ForeColor = System.Drawing.Color.DarkRed;
+            this.txtStock.Location = new System.Drawing.Point(57, 363);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.Size = new System.Drawing.Size(22, 23);
+            this.txtStock.TabIndex = 14;
+            this.txtStock.Text = "...";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(8, 363);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(46, 23);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Còn ";
             // 
             // NUPQuantity
             // 
@@ -97,6 +139,7 @@ namespace GUI
             0,
             0,
             0});
+            this.NUPQuantity.ValueChanged += new System.EventHandler(this.NUPQuantity_ValueChanged);
             // 
             // label3
             // 
@@ -140,7 +183,7 @@ namespace GUI
             this.flCBB.Controls.Add(this.btnM);
             this.flCBB.Controls.Add(this.btnL);
             this.flCBB.Controls.Add(this.btnXL);
-            this.flCBB.Location = new System.Drawing.Point(38, 315);
+            this.flCBB.Location = new System.Drawing.Point(36, 293);
             this.flCBB.Name = "flCBB";
             this.flCBB.Size = new System.Drawing.Size(201, 58);
             this.flCBB.TabIndex = 8;
@@ -185,7 +228,7 @@ namespace GUI
             // 
             this.cbbMauSac.FormattingEnabled = true;
             this.cbbMauSac.ItemHeight = 24;
-            this.cbbMauSac.Location = new System.Drawing.Point(96, 266);
+            this.cbbMauSac.Location = new System.Drawing.Point(96, 247);
             this.cbbMauSac.Name = "cbbMauSac";
             this.cbbMauSac.Size = new System.Drawing.Size(159, 30);
             this.cbbMauSac.TabIndex = 7;
@@ -197,7 +240,7 @@ namespace GUI
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(8, 273);
+            this.label1.Location = new System.Drawing.Point(8, 247);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 23);
             this.label1.TabIndex = 6;
@@ -225,7 +268,7 @@ namespace GUI
             this.txtGia.BackColor = System.Drawing.Color.Transparent;
             this.txtGia.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGia.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.txtGia.Location = new System.Drawing.Point(8, 238);
+            this.txtGia.Location = new System.Drawing.Point(8, 224);
             this.txtGia.Name = "txtGia";
             this.txtGia.Size = new System.Drawing.Size(35, 23);
             this.txtGia.TabIndex = 4;
@@ -289,5 +332,8 @@ namespace GUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2NumericUpDown NUPQuantity;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label txtStock;
+        private System.Windows.Forms.Label label4;
     }
 }

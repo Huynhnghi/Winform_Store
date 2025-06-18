@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class Class1
+    public static class SessionManager
     {
+        public static string MaNhanVien { get; set; }
     }
+
 }

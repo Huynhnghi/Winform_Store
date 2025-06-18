@@ -45,9 +45,8 @@ namespace GUI
             dt.Columns.Add("Mô tả");
             dt.Columns.Add("Mã loại KM");
             dt.Columns.Add("Phần trăm giảm");
-            //dt.Columns.Add("Giảm tối đa");
-            //dt.Columns.Add("Giảm tiền");
-            //dt.Columns.Add("Điều kiện");
+            dt.Columns.Add("Giảm tiền");
+            dt.Columns.Add("Điều kiện");
             dt.Columns.Add("Ngày bắt đầu");
             dt.Columns.Add("Ngày kết thúc");
             dt.Columns.Add("Trạng thái");
@@ -62,9 +61,8 @@ namespace GUI
                 km.MoTa ?? "",
                 km.MaLoaiKM ?? "",
                 km.PhanTramGiam.ToString() ?? "",
-                //km.GiamToiDa,
-                //km.GiamTien.ToString() ?? "",
-                //km.DieuKien.ToString() ??"",
+                km.GiamTien,
+                km.DieuKien,
                 km.NgayBatDau.ToString("dd/MM/yyyy") ?? "",
                 km.NgayKetThuc.ToString("dd/MM/yyyy") ?? "",
                 km.TrangThai == 1 ? "Hoạt động" : "Ngưng hoạt động",
@@ -240,6 +238,8 @@ namespace GUI
                     MoTa = txtDescription.Text.Trim(),
                     MaLoaiKM = CBBTypeKM.SelectedValue?.ToString(), 
                     PhanTramGiam = int.TryParse(txtPTG.Text.Trim(), out int ptg) ? ptg : 0,
+                    GiamTien = decimal.TryParse(txtGiamTien.Text.Trim(), out decimal giamTien) ? giamTien : (decimal?)null,
+                    DieuKien = decimal.TryParse(txtDieuKien.Text.Trim(), out decimal dieuKien) ? dieuKien : (decimal?)null,
                     NgayBatDau = DTPStart.Value,
                     NgayKetThuc = DTPEnd.Value,
                     TrangThai = (cbbstatus.SelectedValue != null && int.TryParse(cbbstatus.SelectedValue.ToString(), out int trangthai)) ? trangthai : 0,

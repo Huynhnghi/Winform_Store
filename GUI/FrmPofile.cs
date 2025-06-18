@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Security.Cryptography;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
+using System.Net.Http;
 using System.Text;
+using System.Text.Json;
+using System.Net.Http.Headers;
+using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DTO;
@@ -82,6 +84,8 @@ namespace GUI
 
         private void FrmPofile_Load(object sender, EventArgs e)
         {
+            lbNameDN.Text = CurrentUser.User.HoTen;
+            txtDN.Text = CurrentUser.User.Username;
             //LoadAccount();
 
             //try
@@ -99,7 +103,6 @@ namespace GUI
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
-            this.Hide();
             frmMain f = new frmMain();
             f.Show();
         }
@@ -135,30 +138,63 @@ namespace GUI
             //}
         }
 
-        private void btnCapNhat_Click(object sender, EventArgs e)
+        /* Cập nhật tên tài khoản */
+        private async Task UpdateAccountUsernameAsync(string maNV, string tenDangNhapMoi)
         {
-            //string newUsername = txtDN.Text.Trim();
+            var handler = new HttpClientHandler();
+            handler.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator; // Bypass HTTPS nếu cần
 
-            //if (string.IsNullOrEmpty(newUsername))
-            //{
-            //    MessageBox.Show("Tên đăng nhập không thể trống.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            //    return;
-            //}
+            var httpClient = new HttpClient(handler);
+            var url = $"https://localhost:7265/api/NhanVien/UpdateAccountPartial/{maNV}";
 
-            //LoginBLL loginBll = new LoginBLL();
-            //bool isUpdated = loginBll.UpdateUsername(newUsername);
+            var data = new
+            {
+                MaNV = maNV,
+                TenDangNhap = tenDangNhapMoi
+            };
 
-            //if (isUpdated)
-            //{
-            //    MessageBox.Show("Cập nhật tên thành công.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            var json = JsonSerializer.Serialize(data);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            //    lbUserName.Text = LoginDAL.CurrentUsername;
-            //    LoadUserName(LoginDAL.CurrentUsername);
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Cập nhật không thành công. vui lòng kiểm tra lại.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            try
+            {
+                var response = await httpClient.PutAsync(url, content);
+                if (response.IsSuccessStatusCode)
+                {
+                    MessageBox.Show("Cập nhật tài khoản thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    FrmLogin f = new FrmLogin();
+                    f.Show();
+                    this.Close();
+                }
+                else
+                {
+                    var error = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show($"Lỗi cập nhật: {error}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi gọi API: " + ex.Message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private async void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            string newUsername = txtDN.Text.Trim();
+
+            if (string.IsNullOrEmpty(newUsername))
+            {
+                MessageBox.Show("Tên đăng nhập không thể trống.", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string maNV = CurrentUser.User.MaNhanVien; // Lấy mã NV từ người dùng đang đăng nhập
+
+            await UpdateAccountUsernameAsync(maNV, newUsername);
+
+            // Cập nhật giao diện nếu cần
+            txtDN.Text = newUsername;
         }
 
         private void dgvND_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -176,51 +212,58 @@ namespace GUI
             //dgvND.Refresh();
         }
 
+        private async Task UpdatePasswordAsync(string maNV, string password)
+        {
+            var handler = new HttpClientHandler();
+            handler.ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator; 
+
+            var httpClient = new HttpClient(handler);
+            var url = $"https://localhost:7265/api/NhanVien/UpdatePass/{maNV}";
+
+            var data = new
+            {
+                MaNV = maNV,
+                password = password
+            };
+
+            var json = JsonSerializer.Serialize(data);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            try
+            {
+                var response = await httpClient.PutAsync(url, content);
+                if (response.IsSuccessStatusCode)
+                {
+                    MessageBox.Show("Cập nhật mật khẩu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    FrmLogin f = new FrmLogin();
+                    f.Show();
+                    this.Close();
+                }
+                else
+                {
+                    var error = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show($"Lỗi cập nhật: {error}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi gọi API: " + ex.Message, "Lỗi kết nối", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         private void btnCapNhatPass_Click(object sender, EventArgs e)
         {
-            //string currentUsername = LoginDAL.CurrentUsername;
-            //string currentPassword = txtPassOld.Text.Trim();
-            //string newPassword = txtNewPass.Text.Trim();
-            //string confirmPassword = txtNhapLaiPass.Text.Trim();
+            string currentPassword = txtPassOld.Text.Trim();
+            string newPassword = txtNewPass.Text.Trim();
+            string confirmPassword = txtNhapLaiPass.Text.Trim();
 
-            //if (string.IsNullOrEmpty(currentUsername) ||
-            //    string.IsNullOrEmpty(currentPassword) ||
-            //    string.IsNullOrEmpty(newPassword) ||
-            //    string.IsNullOrEmpty(confirmPassword))
-            //{
-            //    MessageBox.Show("Vui lòng nhập đầy đủ thông tin.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    return;
-            //}
+            if ( string.IsNullOrEmpty(currentPassword) ||
+                string.IsNullOrEmpty(newPassword) ||
+                string.IsNullOrEmpty(confirmPassword))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
-            //LoginBLL loginBll = new LoginBLL();
-            //bool isCurrentPasswordValid = loginBll.Login(currentUsername, currentPassword);
-            //if (!isCurrentPasswordValid)
-            //{
-            //    MessageBox.Show("Mật khẩu hiện tại không đúng.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    return;
-            //}
-            //if (newPassword != confirmPassword)
-            //{
-            //    MessageBox.Show("Mật khẩu mới và nhập lại mật khẩu không trùng khớp.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //    return;
-            //}
-            //bool isUpdated = loginBll.UpdateUserPassword(currentUsername, newPassword);
-
-            //if (isUpdated)
-            //{
-            //    MessageBox.Show("Cập nhật mật khẩu thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    this.Hide();
-            //    frmMain f = new frmMain();
-            //    f.ShowDialog();
-            //    f.Show();
-            //    txtPassOld.Clear();
-            //    txtNewPass.Clear();
-            //    txtNhapLaiPass.Clear();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Cập nhật mật khẩu không thành công.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
         }
 
         private void btnCapNhatQuyen_Click(object sender, EventArgs e)

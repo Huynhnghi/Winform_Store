@@ -16,6 +16,8 @@ namespace GUI
             selectSL.ValueChanged += SelectSL_ValueChanged;
         }
 
+        public string ProductId { get; set; } // Mã sản phẩm thêm vào
+
         public Image ProductImage
         {
             get => picCartProduct.Image;
@@ -48,7 +50,7 @@ namespace GUI
             {
                 if (selectSL.Value != value)
                 {
-                    selectSL.Value = value;  // Cập nhật lên giao diện
+                    selectSL.Value = value;
                 }
 
                 productQuantity = value;
@@ -56,6 +58,7 @@ namespace GUI
                 UpdateTotalPriceDisplay();
             }
         }
+
         public decimal ProductPrice
         {
             get => originalPrice;
