@@ -28,5 +28,25 @@ namespace GUI
             frmMain f = new frmMain();
             f.Show();
         }
+
+        private void btnChonTuKho_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTaoSanPham_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ButtonThêm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cbbNhaCungCap_SelectedValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

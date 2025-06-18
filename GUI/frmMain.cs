@@ -161,5 +161,57 @@ namespace GUI
             f.ShowDialog();
             f.Show();
         }
+
+        private void guna2Button1_Click_1(object sender, EventArgs e)
+        {
+            if (CurrentUser.User.MaQuyen != "Q01")
+            {
+                MessageBox.Show("Chức năng này chỉ dành cho Admin!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            this.Hide();
+            FrmSanPham f = new FrmSanPham();
+            f.ShowDialog();
+            f.Show();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            if (CurrentUser.User.MaQuyen != "Q01")
+            {
+                MessageBox.Show("Chức năng này chỉ dành cho Admin!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            this.Hide();
+            frmQuanLyDanhMuc f = new frmQuanLyDanhMuc();
+            f.ShowDialog();
+            f.Show();
+        }
+
+        private void guna2Button3_Click_1(object sender, EventArgs e)
+        {
+            if (CurrentUser.User.MaQuyen != "Q01")
+            {
+                MessageBox.Show("Chức năng này chỉ dành cho Admin!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            this.Hide();
+            frmBienTheSP f = new frmBienTheSP();
+            f.ShowDialog();
+            f.Show();
+        }
+
+        private void Report_Click(object sender, EventArgs e)
+        {
+            if (CurrentUser.User.MaQuyen != "Q01")
+            {
+                MessageBox.Show("Chức năng này chỉ dành cho Admin!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            this.Hide();
+            FrmThongKeHangTonKho f = new FrmThongKeHangTonKho();
+            f.ShowDialog();
+            f.Show();
+        }
     }
 }

@@ -1,7 +1,144 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\NGHI\\Desktop\\Desktop\\Store\\",
-  "Documents": [],
+  "WorkspaceRootPath": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmquanlydanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmquanlydanhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmbienthesp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmbienthesp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmbienthesp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmbienthesp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmsanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmthongkehangtonkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmthongkehangtonkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmstockin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmstockin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|d:\\hk8_2024-2025\\kltn\\winform\\winform_store\\gui\\frmthongkehangtonkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmthongkehangtonkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmsupplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmsupplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|d:\\hk8_2024-2025\\kltn\\winform\\winform_store\\gui\\frmthongkehangtonkho.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmthongkehangtonkho.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|d:\\hk8_2024-2025\\kltn\\winform\\winform_store\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|d:\\hk8_2024-2025\\kltn\\winform\\winform_store\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frnchitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frnchitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmstockin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmstockin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmproductlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmproductlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmselectstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmselectstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmselectstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmselectstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE7BAC89-A2F0-46A6-94A4-BDBCCC77DC78}|DTO\\DTO.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\dto\\sanphamtonkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE7BAC89-A2F0-46A6-94A4-BDBCCC77DC78}|DTO\\DTO.csproj|solutionrelative:dto\\sanphamtonkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmprintbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmprintbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmpofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmpofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE7BAC89-A2F0-46A6-94A4-BDBCCC77DC78}|DTO\\DTO.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\dto\\hoadoninmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE7BAC89-A2F0-46A6-94A4-BDBCCC77DC78}|DTO\\DTO.csproj|solutionrelative:dto\\hoadoninmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmsale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FE7BAC89-A2F0-46A6-94A4-BDBCCC77DC78}|DTO\\DTO.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\dto\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{FE7BAC89-A2F0-46A6-94A4-BDBCCC77DC78}|DTO\\DTO.csproj|solutionrelative:dto\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\gui\\frmcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39B43050-D74A-4287-A5D1-271BCAADB765}|GUI\\GUI.csproj|solutionrelative:gui\\frmcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +146,448 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 28,
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\App.config",
+              "RelativeDocumentMoniker": "GUI\\App.config",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\App.config",
+              "RelativeToolTip": "GUI\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-06-18T14:33:12.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Settings.settings",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "GUI\\Properties\\Settings.settings",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\Properties\\Settings.settings",
+              "RelativeToolTip": "GUI\\Properties\\Settings.settings",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2025-06-18T14:33:43.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FrmCart.cs [Design]",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmCart.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmCart.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmCart.cs [Design]",
+              "RelativeToolTip": "GUI\\FrmCart.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T14:34:17.353Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "FrmCart.cs",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmCart.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmCart.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmCart.cs",
+              "RelativeToolTip": "GUI\\FrmCart.cs",
+              "ViewState": "AgIAAJ4CAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T14:34:21.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "app.config",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\DTO\\app.config",
+              "RelativeDocumentMoniker": "DTO\\app.config",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\DTO\\app.config",
+              "RelativeToolTip": "DTO\\app.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-06-18T14:38:18.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\Program.cs",
+              "RelativeDocumentMoniker": "GUI\\Program.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\Program.cs",
+              "RelativeToolTip": "GUI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T14:39:25.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "HoaDonInModel.cs",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\DTO\\HoaDonInModel.cs",
+              "RelativeDocumentMoniker": "DTO\\HoaDonInModel.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\DTO\\HoaDonInModel.cs",
+              "RelativeToolTip": "DTO\\HoaDonInModel.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAUwB4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T14:52:53.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FrmSale.cs [Design]",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmSale.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmSale.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmSale.cs [Design]",
+              "RelativeToolTip": "GUI\\FrmSale.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T14:53:14.688Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "FrmSale.cs",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmSale.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmSale.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmSale.cs",
+              "RelativeToolTip": "GUI\\FrmSale.cs",
+              "ViewState": "AgIAAGIBAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T14:53:19.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FrnChiTietHoaDon.cs",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrnChiTietHoaDon.cs",
+              "RelativeDocumentMoniker": "GUI\\FrnChiTietHoaDon.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrnChiTietHoaDon.cs",
+              "RelativeToolTip": "GUI\\FrnChiTietHoaDon.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAswD0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T15:25:15.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FrmSelectStock.cs [Design]",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmSelectStock.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmSelectStock.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmSelectStock.cs [Design]",
+              "RelativeToolTip": "GUI\\FrmSelectStock.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T17:56:14.734Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FrmStockIn.cs [Design]",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmStockIn.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmStockIn.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmStockIn.cs [Design]",
+              "RelativeToolTip": "GUI\\FrmStockIn.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T17:56:29.681Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FrmCustomer.cs [Design]",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmCustomer.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmCustomer.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmCustomer.cs [Design]",
+              "RelativeToolTip": "GUI\\FrmCustomer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T18:12:57.3Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "FrmLogin.cs [Design]",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmLogin.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmLogin.cs [Design]",
+              "RelativeToolTip": "GUI\\FrmLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T18:12:59.601Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FrmPofile.cs [Design]",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmPofile.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmPofile.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmPofile.cs [Design]",
+              "RelativeToolTip": "GUI\\FrmPofile.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T18:13:02.536Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "FrmPrintBill.cs [Design]",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmPrintBill.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmPrintBill.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmPrintBill.cs [Design]",
+              "RelativeToolTip": "GUI\\FrmPrintBill.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T18:13:04.521Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FrmProductList.cs [Design]",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmProductList.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmProductList.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmProductList.cs [Design]",
+              "RelativeToolTip": "GUI\\FrmProductList.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T18:13:06.126Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FrmReport.cs [Design]",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmReport.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmReport.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmReport.cs [Design]",
+              "RelativeToolTip": "GUI\\FrmReport.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T18:13:08.443Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "FrmStaff.cs [Design]",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmStaff.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmStaff.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmStaff.cs [Design]",
+              "RelativeToolTip": "GUI\\FrmStaff.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T18:13:17.796Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmSupplier.cs [Design]",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmSupplier.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmSupplier.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmSupplier.cs [Design]",
+              "RelativeToolTip": "GUI\\FrmSupplier.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T18:13:24.364Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmSanPham.cs [Design]",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmSanPham.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmSanPham.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmSanPham.cs [Design]",
+              "RelativeToolTip": "GUI\\FrmSanPham.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T18:18:40.29Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FrmSelectStock.cs",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmSelectStock.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmSelectStock.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmSelectStock.cs",
+              "RelativeToolTip": "GUI\\FrmSelectStock.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAkwHQAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T18:32:43.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmSanPham.cs",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmSanPham.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmSanPham.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmSanPham.cs",
+              "RelativeToolTip": "GUI\\FrmSanPham.cs",
+              "ViewState": "AgIAAAgBAAAAAAAAAAAiwA8BAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T20:04:12.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SanPhamTonKho.cs",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\DTO\\SanPhamTonKho.cs",
+              "RelativeDocumentMoniker": "DTO\\SanPhamTonKho.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\DTO\\SanPhamTonKho.cs",
+              "RelativeToolTip": "DTO\\SanPhamTonKho.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T20:14:03.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmQuanLyDanhMuc.cs",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\frmQuanLyDanhMuc.cs",
+              "RelativeDocumentMoniker": "GUI\\frmQuanLyDanhMuc.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\frmQuanLyDanhMuc.cs",
+              "RelativeToolTip": "GUI\\frmQuanLyDanhMuc.cs",
+              "ViewState": "AgIAAMoAAAAAAAAAAAAcwM8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T20:22:28.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmBienTheSP.cs [Design]",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\frmBienTheSP.cs",
+              "RelativeDocumentMoniker": "GUI\\frmBienTheSP.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\frmBienTheSP.cs [Design]",
+              "RelativeToolTip": "GUI\\frmBienTheSP.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T20:53:44.284Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmBienTheSP.cs",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\frmBienTheSP.cs",
+              "RelativeDocumentMoniker": "GUI\\frmBienTheSP.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\frmBienTheSP.cs",
+              "RelativeToolTip": "GUI\\frmBienTheSP.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAAgwLoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T21:04:30.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmStockIn.cs",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmStockIn.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmStockIn.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmStockIn.cs",
+              "RelativeToolTip": "GUI\\FrmStockIn.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAtwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T22:03:31.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmThongKeHangTonKho.cs [Design]",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmThongKeHangTonKho.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmThongKeHangTonKho.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmThongKeHangTonKho.cs [Design]",
+              "RelativeToolTip": "GUI\\FrmThongKeHangTonKho.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T22:14:55.898Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FrmReport.cs",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmReport.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmReport.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmReport.cs",
+              "RelativeToolTip": "GUI\\FrmReport.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T22:15:39.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmThongKeHangTonKho.cs",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmThongKeHangTonKho.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmThongKeHangTonKho.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmThongKeHangTonKho.cs",
+              "RelativeToolTip": "GUI\\FrmThongKeHangTonKho.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAA7wGsAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T22:20:40.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FrmThongKeHangTonKho.Designer.cs",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmThongKeHangTonKho.Designer.cs",
+              "RelativeDocumentMoniker": "GUI\\FrmThongKeHangTonKho.Designer.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\FrmThongKeHangTonKho.Designer.cs",
+              "RelativeToolTip": "GUI\\FrmThongKeHangTonKho.Designer.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAmwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T22:35:07.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\frmMain.cs",
+              "RelativeDocumentMoniker": "GUI\\frmMain.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\frmMain.cs [Design]",
+              "RelativeToolTip": "GUI\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T22:43:37.887Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\frmMain.cs",
+              "RelativeDocumentMoniker": "GUI\\frmMain.cs",
+              "ToolTip": "D:\\HK8_2024-2025\\KLTN\\Winform\\Winform_Store\\GUI\\frmMain.cs",
+              "RelativeToolTip": "GUI\\frmMain.cs",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAswNMAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T22:44:25.63Z",
+              "EditorCaption": ""
             }
           ]
         }

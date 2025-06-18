@@ -46,12 +46,18 @@ namespace GUI
             this.Customer = new MetroFramework.Controls.MetroTile();
             this.btnProfile = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogOut = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.panelLeft.SuspendLayout();
             this.panelRight.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelLeft
             // 
+            this.panelLeft.Controls.Add(this.guna2Button3);
+            this.panelLeft.Controls.Add(this.guna2Button2);
+            this.panelLeft.Controls.Add(this.guna2Button1);
             this.panelLeft.Controls.Add(this.panelRight);
             this.panelLeft.Controls.Add(this.btnProfile);
             this.panelLeft.Controls.Add(this.btnLogOut);
@@ -59,9 +65,9 @@ namespace GUI
             this.panelLeft.FillColor2 = System.Drawing.Color.DeepPink;
             this.panelLeft.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.panelLeft.Location = new System.Drawing.Point(-4, 0);
-            this.panelLeft.Margin = new System.Windows.Forms.Padding(4);
+            this.panelLeft.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(1522, 719);
+            this.panelLeft.Size = new System.Drawing.Size(1712, 899);
             this.panelLeft.TabIndex = 1;
             // 
             // panelRight
@@ -81,10 +87,10 @@ namespace GUI
             this.panelRight.Controls.Add(this.Customer);
             this.panelRight.Cursor = System.Windows.Forms.Cursors.Hand;
             this.panelRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panelRight.Location = new System.Drawing.Point(267, 0);
-            this.panelRight.Margin = new System.Windows.Forms.Padding(4);
+            this.panelRight.Location = new System.Drawing.Point(300, 0);
+            this.panelRight.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelRight.Name = "panelRight";
-            this.panelRight.Size = new System.Drawing.Size(1255, 719);
+            this.panelRight.Size = new System.Drawing.Size(1412, 899);
             this.panelRight.TabIndex = 1;
             // 
             // label1
@@ -92,9 +98,9 @@ namespace GUI
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkRed;
-            this.label1.Location = new System.Drawing.Point(39, 23);
+            this.label1.Location = new System.Drawing.Point(44, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(364, 38);
+            this.label1.Size = new System.Drawing.Size(429, 45);
             this.label1.TabIndex = 29;
             this.label1.Text = "Quản lý cửa hàng thời trang";
             // 
@@ -102,9 +108,10 @@ namespace GUI
             // 
             this.Supplier.ActiveControl = null;
             this.Supplier.BackColor = System.Drawing.Color.Pink;
-            this.Supplier.Location = new System.Drawing.Point(592, 487);
+            this.Supplier.Location = new System.Drawing.Point(666, 609);
+            this.Supplier.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Supplier.Name = "Supplier";
-            this.Supplier.Size = new System.Drawing.Size(584, 194);
+            this.Supplier.Size = new System.Drawing.Size(657, 242);
             this.Supplier.TabIndex = 25;
             this.Supplier.Text = "Quản lý nhà cung cấp";
             this.Supplier.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -122,10 +129,10 @@ namespace GUI
             // 
             this.guna2Separator1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Separator1.FillColor = System.Drawing.Color.DarkRed;
-            this.guna2Separator1.Location = new System.Drawing.Point(37, 65);
-            this.guna2Separator1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Separator1.Location = new System.Drawing.Point(42, 81);
+            this.guna2Separator1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2Separator1.Name = "guna2Separator1";
-            this.guna2Separator1.Size = new System.Drawing.Size(1139, 12);
+            this.guna2Separator1.Size = new System.Drawing.Size(1281, 15);
             this.guna2Separator1.TabIndex = 28;
             // 
             // Staff
@@ -133,10 +140,10 @@ namespace GUI
             this.Staff.ActiveControl = null;
             this.Staff.BackColor = System.Drawing.Color.Pink;
             this.Staff.ForeColor = System.Drawing.Color.Black;
-            this.Staff.Location = new System.Drawing.Point(609, 249);
-            this.Staff.Margin = new System.Windows.Forms.Padding(4);
+            this.Staff.Location = new System.Drawing.Point(685, 311);
+            this.Staff.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Staff.Name = "Staff";
-            this.Staff.Size = new System.Drawing.Size(188, 212);
+            this.Staff.Size = new System.Drawing.Size(212, 265);
             this.Staff.Style = MetroFramework.MetroColorStyle.White;
             this.Staff.TabIndex = 20;
             this.Staff.Text = "Nhân viên";
@@ -156,10 +163,10 @@ namespace GUI
             this.Sale.ActiveControl = null;
             this.Sale.BackColor = System.Drawing.Color.Pink;
             this.Sale.ForeColor = System.Drawing.Color.Black;
-            this.Sale.Location = new System.Drawing.Point(413, 249);
-            this.Sale.Margin = new System.Windows.Forms.Padding(4);
+            this.Sale.Location = new System.Drawing.Point(465, 311);
+            this.Sale.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Sale.Name = "Sale";
-            this.Sale.Size = new System.Drawing.Size(188, 212);
+            this.Sale.Size = new System.Drawing.Size(212, 265);
             this.Sale.TabIndex = 21;
             this.Sale.Text = "Khuyến mãi";
             this.Sale.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -179,10 +186,10 @@ namespace GUI
             this.guna2ControlBox1.BackColor = System.Drawing.SystemColors.Desktop;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1209, 0);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1360, 0);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(46, 36);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(52, 45);
             this.guna2ControlBox1.TabIndex = 19;
             this.guna2ControlBox1.Click += new System.EventHandler(this.guna2ControlBox1_Click);
             // 
@@ -192,10 +199,10 @@ namespace GUI
             this.Report.AutoSize = true;
             this.Report.BackColor = System.Drawing.Color.Pink;
             this.Report.ForeColor = System.Drawing.Color.Black;
-            this.Report.Location = new System.Drawing.Point(413, 85);
-            this.Report.Margin = new System.Windows.Forms.Padding(4);
+            this.Report.Location = new System.Drawing.Point(465, 106);
+            this.Report.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Report.Name = "Report";
-            this.Report.Size = new System.Drawing.Size(384, 156);
+            this.Report.Size = new System.Drawing.Size(432, 195);
             this.Report.TabIndex = 22;
             this.Report.Text = "Thống kê";
             this.Report.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -208,6 +215,7 @@ namespace GUI
             this.Report.UseSelectable = true;
             this.Report.UseStyleColors = true;
             this.Report.UseTileImage = true;
+            this.Report.Click += new System.EventHandler(this.Report_Click);
             // 
             // guna2ControlBox2
             // 
@@ -216,10 +224,10 @@ namespace GUI
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
             this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1165, 0);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1311, 0);
+            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(47, 36);
+            this.guna2ControlBox2.Size = new System.Drawing.Size(53, 45);
             this.guna2ControlBox2.TabIndex = 18;
             // 
             // Bill
@@ -227,10 +235,10 @@ namespace GUI
             this.Bill.ActiveControl = null;
             this.Bill.BackColor = System.Drawing.Color.Pink;
             this.Bill.ForeColor = System.Drawing.Color.Black;
-            this.Bill.Location = new System.Drawing.Point(835, 85);
-            this.Bill.Margin = new System.Windows.Forms.Padding(4);
+            this.Bill.Location = new System.Drawing.Point(939, 106);
+            this.Bill.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Bill.Name = "Bill";
-            this.Bill.Size = new System.Drawing.Size(341, 375);
+            this.Bill.Size = new System.Drawing.Size(384, 469);
             this.Bill.TabIndex = 23;
             this.Bill.Text = "Đơn hàng";
             this.Bill.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -250,10 +258,10 @@ namespace GUI
             this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox3.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox3.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(1116, 0);
-            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(1256, 0);
+            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
-            this.guna2ControlBox3.Size = new System.Drawing.Size(51, 36);
+            this.guna2ControlBox3.Size = new System.Drawing.Size(57, 45);
             this.guna2ControlBox3.TabIndex = 17;
             // 
             // Product
@@ -262,10 +270,10 @@ namespace GUI
             this.Product.AutoSize = true;
             this.Product.BackColor = System.Drawing.Color.Pink;
             this.Product.ForeColor = System.Drawing.Color.Black;
-            this.Product.Location = new System.Drawing.Point(65, 85);
-            this.Product.Margin = new System.Windows.Forms.Padding(4);
+            this.Product.Location = new System.Drawing.Point(73, 106);
+            this.Product.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Product.Name = "Product";
-            this.Product.Size = new System.Drawing.Size(324, 375);
+            this.Product.Size = new System.Drawing.Size(364, 469);
             this.Product.TabIndex = 27;
             this.Product.Text = "Quản lý sản phẩm";
             this.Product.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -284,10 +292,10 @@ namespace GUI
             this.Customer.ActiveControl = null;
             this.Customer.BackColor = System.Drawing.Color.Pink;
             this.Customer.ForeColor = System.Drawing.Color.Black;
-            this.Customer.Location = new System.Drawing.Point(65, 487);
-            this.Customer.Margin = new System.Windows.Forms.Padding(4);
+            this.Customer.Location = new System.Drawing.Point(73, 609);
+            this.Customer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Customer.Name = "Customer";
-            this.Customer.Size = new System.Drawing.Size(519, 194);
+            this.Customer.Size = new System.Drawing.Size(584, 242);
             this.Customer.TabIndex = 25;
             this.Customer.Text = "Quản lý khách hàng";
             this.Customer.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -314,10 +322,10 @@ namespace GUI
             this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
             this.btnProfile.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnProfile.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnProfile.Location = new System.Drawing.Point(0, 583);
-            this.btnProfile.Margin = new System.Windows.Forms.Padding(4);
+            this.btnProfile.Location = new System.Drawing.Point(0, 729);
+            this.btnProfile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(271, 66);
+            this.btnProfile.Size = new System.Drawing.Size(305, 82);
             this.btnProfile.TabIndex = 0;
             this.btnProfile.Text = "Thông tin cá nhân";
             this.btnProfile.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -335,22 +343,88 @@ namespace GUI
             this.btnLogOut.Image = ((System.Drawing.Image)(resources.GetObject("btnLogOut.Image")));
             this.btnLogOut.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogOut.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnLogOut.Location = new System.Drawing.Point(0, 647);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogOut.Location = new System.Drawing.Point(0, 809);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(271, 68);
+            this.btnLogOut.Size = new System.Drawing.Size(305, 85);
             this.btnLogOut.TabIndex = 0;
             this.btnLogOut.Text = "Đăng xuất";
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click_1);
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.BackColor = System.Drawing.Color.Pink;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Pink;
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.ImageSize = new System.Drawing.Size(50, 50);
+            this.guna2Button1.Location = new System.Drawing.Point(0, 609);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(305, 82);
+            this.guna2Button1.TabIndex = 30;
+            this.guna2Button1.Text = "Quản lý sản phẩm";
+            this.guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.BackColor = System.Drawing.Color.Pink;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.Pink;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
+            this.guna2Button2.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button2.ImageSize = new System.Drawing.Size(50, 50);
+            this.guna2Button2.Location = new System.Drawing.Point(0, 482);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(305, 82);
+            this.guna2Button2.TabIndex = 31;
+            this.guna2Button2.Text = "Quản lý danh mục";
+            this.guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
+            // guna2Button3
+            // 
+            this.guna2Button3.BackColor = System.Drawing.Color.Pink;
+            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button3.FillColor = System.Drawing.Color.Pink;
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button3.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
+            this.guna2Button3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button3.ImageSize = new System.Drawing.Size(50, 50);
+            this.guna2Button3.Location = new System.Drawing.Point(4, 358);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.Size = new System.Drawing.Size(305, 82);
+            this.guna2Button3.TabIndex = 32;
+            this.guna2Button3.Text = "Quản lý chi tiết";
+            this.guna2Button3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click_1);
+            // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1517, 716);
+            this.ClientSize = new System.Drawing.Size(1707, 895);
             this.Controls.Add(this.panelLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmMain";
@@ -380,5 +454,8 @@ namespace GUI
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
         private MetroFramework.Controls.MetroTile Supplier;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }
